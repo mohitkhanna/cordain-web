@@ -1,0 +1,51 @@
+{
+	"name": "cordain-web",
+	"description": "Cordain's Main Website",
+	"version": "0.0.0",
+	"homepage": "http://www.cordain.com/",
+	"keywords": [
+		"cordain"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mohitkhanna/cordain-web.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mohitkhanna/cordain-web/issues"
+	},
+	"author": {
+		"name": "Mohit Khanna",
+		"email": "mohitk@icloud.com",
+		"url": "http://www.cordain.com/"
+	},
+	"contributors": [
+		{
+			"name": "Bapatla Veera Srinivasa",
+			"email": "srinivasa.bv@gmail.com",
+			"url": "http://www.cordain.com/"
+		}
+	],
+	"licenses": [
+		{
+			"type": "CIT",
+			"url": "http://www.cordain.com/assets/LICENSE.txt"
+		}
+	],
+	"main": "src/index.js",
+	"engines": {
+		"node": ">= 0.10.29"
+	},
+	"dependencies": {
+		"async": ">= 0.2.5",
+		"express": "~4.6.1"
+	},
+	"devDependencies": {
+		"expect.js": ">= 0.3.1",
+		"mocha": "*",
+		"should": "^4.0.4"
+	},
+	"private": true,
+	"scripts": {
+		"dist": "node dist;"
+	}
+}
