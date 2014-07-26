@@ -1,11 +1,10 @@
 {
 	"name": "cordain-web",
 	"description": "Cordain's Main Website",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"homepage": "http://www.cordain.com/",
-	"keywords": [
-		"cordain"
-	],
+	"keywords": ["cordain"],
+	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mohitkhanna/cordain-web.git"
@@ -18,34 +17,40 @@
 		"email": "mohitk@icloud.com",
 		"url": "http://www.cordain.com/"
 	},
-	"contributors": [
-		{
-			"name": "Bapatla Veera Srinivasa",
-			"email": "srinivasa.bv@gmail.com",
-			"url": "http://www.cordain.com/"
-		}
-	],
-	"licenses": [
-		{
-			"type": "CIT",
-			"url": "http://www.cordain.com/assets/LICENSE.txt"
-		}
-	],
+	"contributors": [{
+		"name": "Bapatla Veera Srinivasa",
+		"email": "srinivasa.bv@gmail.com",
+		"url": "http://www.cordain.com/"
+	}],
+	"licenses": [{
+		"type": "CIT",
+		"url": "http://www.cordain.com/assets/LICENSE.txt"
+	}],
 	"main": "src/index.js",
 	"engines": {
-		"node": ">= 0.10.29"
+		"node": "0.10.x"
+	},
+	"scripts": {
+		"start": "nodemon bin/www",
+		"test": "DEBUG=cordain-web nodemon bin/www",
+		"dist": "node dist;"
 	},
 	"dependencies": {
-		"async": ">= 0.2.5",
-		"express": "~4.6.1"
+		"async": "0.2.x",
+		"express": "4.7.x",
+		"serve-favicon": "2.0.x",
+		"morgan": "1.2.x",
+		"cookie-parser": "1.3.x",
+		"body-parser": "1.5.x",
+		"debug": "1.0.x",
+		"jade": "1.5.x",
+		"mongodb": "1.4.x",
+		"winston": "0.7.x",
+		"moment": "2.x.x"
 	},
 	"devDependencies": {
-		"expect.js": ">= 0.3.1",
-		"mocha": "*",
-		"should": "^4.0.4"
-	},
-	"private": true,
-	"scripts": {
-		"dist": "node dist;"
+		"expect.js": "0.3.x",
+		"mocha": "1.21.x",
+		"should": "3.3.x"
 	}
 }
