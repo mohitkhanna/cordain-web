@@ -44,7 +44,9 @@
 		"body-parser": "1.5.x",
 		"debug": "1.0.x",
 		"jade": "1.5.x",
-		"mongodb": "1.4.x"
+		"mongodb": "1.4.x",
+		"winston": "0.7.x",
+		"moment": "2.x.x"
 	},
 	"devDependencies": {
 		"expect.js": "0.3.x",
