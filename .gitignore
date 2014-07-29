@@ -1,1 +1,9 @@
 node_modules
+assets/scss/.sass-cache
+assets/public/css/bootstrap-theme.min.css
+assets/public/css/bootstrap-theme.min.css.map
+assets/public/css/bootstrap.min.css
+assets/public/css/bootstrap.min.css.map
+assets/public/css/global.css
+assets/public/css/global.css.map
+assets/public/scss/.sass-cache
