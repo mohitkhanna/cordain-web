@@ -3,6 +3,7 @@
 
 # LuaJIT Setup
 	tar -zxvf LuaJIT-2.0.3.tar.gz
+	cd LuaJIT-2.0.3
 	make
 	sudo make install
 
@@ -17,12 +18,14 @@
 	tar zxvf redis2-nginx-module-0.11.tar.gz; ll
 	tar zxvf set-misc-nginx-module-0.24.tar.gz; ll
 	tar zxvf zlib-1.2.8.tar.gz; ll
-	rm *.tar.*
+	unzip ngx_http_substitutions_filter_module-master.zip; ll
+	rm -f *.tar.*
+	rm -f *.zip
 
-## NGinx v1.7.3
+## NGinx v1.7.4
 ### Compile with OS installed OpenSSL
-	tar -zxvf nginx-1.7.3.tar.gz
-	rm nginx-1.7.3.tar.gz
+	tar -zxvf nginx-1.7.4.tar.gz
+	rm -f nginx-1.7.4.tar.gz
 
 	export LUAJIT_LIB=/usr/local/lib/
 	export LUAJIT_INC=/usr/local/include/luajit-2.0/
