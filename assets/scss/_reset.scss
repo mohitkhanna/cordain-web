@@ -1,6 +1,12 @@
 body {
+	font-family: $main-font-stack;
 }
 
 a {
-	color: $blue;
+	color: $lightBlue;
+
+	&:hover {
+		color: $blue;
+		text-decoration: none;
+	}
 }
